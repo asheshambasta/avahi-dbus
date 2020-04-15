@@ -5,7 +5,7 @@ let
 
         overrides = hpnew: hpold: rec {
           
-          avahi-dbus = hpnew.callPackage ./avahi-dbus.nix { zlib = extradeps.foreign.zlib; };
+          avahi-dbus = hpnew.callPackage ./avahi-dbus.nix extradeps.foreign; 
         };
       };
     };

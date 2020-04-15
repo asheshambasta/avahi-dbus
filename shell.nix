@@ -6,6 +6,6 @@ let
   foreign = builtins.attrValues extradeps.foreign; 
 in pkgs.mkShell {
   buildInputs = with pkgs; foreign ++ [
-    (haskellPackages.ghcWithPackages (h: [avahi-dbus]))
+    (haskellPackages.ghcWithHoogle (h: [avahi-dbus]))
   ];
 }

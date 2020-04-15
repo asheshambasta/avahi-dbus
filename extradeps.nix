@@ -7,4 +7,4 @@ let
   # zlib is required
   foreign = { zlib = zlib; };
 in 
-  { foreign = foreign; }
+  { inherit foreign; }
